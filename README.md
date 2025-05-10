@@ -1,7 +1,3 @@
-# ClamperApiIntegradora
-Projeto Algoritimo Integracao Dados - PUC MG - Grupo 1
-
-
 ## Como rodar a API localmente
 
 1. Certifique-se de ter o Python 3.8+ instalado em sua máquina.
