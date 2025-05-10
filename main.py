@@ -3,9 +3,8 @@ from adaptadores.entrada.api.rotas import registrar_rota
 
 def cria_api():
     app = Flask(__name__)
-
+    app.config['JSON_AS_ASCII'] = False
     registrar_rota(app)
-
     return app
 
 if __name__ == "__main__":
