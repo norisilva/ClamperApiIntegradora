@@ -37,6 +37,6 @@ def novo_produto():
         }), 201
 
     except ValidationError as e:
-        return jsonify({"erro": "Erro de validação", "details": e.messages}), 400
+        return jsonify({"erro": "Erro de validação", "detalhes": e.messages}), 400
     except Exception as e:
-        return jsonify({"erro": "Erro interno do servidor", "details": str(e)}), 500
+        return jsonify({"erro": "Erro interno do servidor", "detalhes": str(e)}), 500
