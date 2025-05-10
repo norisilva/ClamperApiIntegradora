@@ -1,6 +1,6 @@
 from flask import Flask
-from adaptadores.entrada.api.rotas import registrar_rota
-from infra.Configuracao import configuracao_por_nome
+from infra.rotas import registrar_rota
+from infra.configuracao import configuracao_por_nome
 import os
 
 def cria_api():
