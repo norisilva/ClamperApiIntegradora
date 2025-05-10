@@ -24,6 +24,8 @@ Após iniciar a aplicação, a API estará disponível.
 
 ## Endpoints disponíveis
 
+POST http://127.0.0.1:5000/ClamperApiIntegradora/protheus/novoproduto
+
 GET http://127.0.0.1:5000/ClamperApiIntegradora/
 
 GET http://127.0.0.1:5000/ClamperApiIntegradora/health
