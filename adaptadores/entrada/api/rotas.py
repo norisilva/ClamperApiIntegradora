@@ -1,4 +1,5 @@
 from flask import Blueprint, jsonify
+from adaptadores.entrada.api.protheus_controller import protheus_api
 
 api = Blueprint("api", __name__)
 
@@ -12,3 +13,4 @@ def home():
 
 def registrar_rota(app):
     app.register_blueprint(api, url_prefix="/ClamperApiIntegradora")
+    app.register_blueprint(protheus_api, url_prefix="/ClamperApiIntegradora")
