@@ -7,7 +7,7 @@ Projeto Algoritimo Integracao Dados - PUC MG - Grupo 1
 1. Certifique-se de ter o Python 3.8+ instalado em sua máquina.
 2. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/ClamperApiIntegradora.git
+   git clone https://github.com/nosilva/ClamperApiIntegradora.git
    cd ClamperApiIntegradora
    
 ## Crie e ative um ambiente virtual:
