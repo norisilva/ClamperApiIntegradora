@@ -1,5 +1,5 @@
 # ClamperApiIntegradora
-Projeto Algoritimo Integracao Dados - PUC MG - Grupo 1
+Projeto Integracao Dados - PUC MG - Grupo 1
 
 
 ## Como rodar a API localmente
