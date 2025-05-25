@@ -1,13 +1,9 @@
-# ClamperApiIntegradora
-Projeto Algoritimo Integracao Dados - PUC MG - Grupo 1
-
-
 ## Como rodar a API localmente
 
 1. Certifique-se de ter o Python 3.8+ instalado em sua máquina.
 2. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/ClamperApiIntegradora.git
+   git clone https://github.com/norisilva/ClamperApiIntegradora.git
    cd ClamperApiIntegradora
    
 ## Crie e ative um ambiente virtual:
@@ -27,6 +23,8 @@ python main.py
 Após iniciar a aplicação, a API estará disponível.
 
 ## Endpoints disponíveis
+
+POST http://127.0.0.1:5000/ClamperApiIntegradora/protheus/novoproduto
 
 GET http://127.0.0.1:5000/ClamperApiIntegradora/
 
