@@ -1,5 +1,5 @@
 from flask import Flask
-from infra.rotas import registrar_rota
+from infra.api.rotas import registrar_rota
 from infra.configuracao import configuracao_por_nome
 import os
 
