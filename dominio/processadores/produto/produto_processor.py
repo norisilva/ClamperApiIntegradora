@@ -1,15 +1,14 @@
 import uuid
 from datetime import datetime
 from dominio.produto import Produto
-from adaptadores.saida.api.salesforce_adapter import SalesforceAdapter
+from dominio.portas.saida.produto_saida_salesforce import ProdutoSaida
 from dominio.excecoes.retentativa_excecao import RetentativaExcecao
 
 RECEBIDO_COM_SUCESSO = "Recebido com sucesso"
 
-
 class ProdutoProcessor:
-    def __init__(self, salesforce_adapter: SalesforceAdapter):
-        self.salesforce_adapter = salesforce_adapter
+    def __init__(self, produto_saida: ProdutoSaida):
+        self.produto_saida = produto_saida
 
     def processar_produto(self, produto: Produto) -> Produto:
         print("Processando produto: %s", produto.codigo)
@@ -21,7 +20,7 @@ class ProdutoProcessor:
         print("Produto processado com sucesso: %s", produto.codigo)
 
         try:
-            self.salesforce_adapter.enviar_produto(produto)
+            self.produto_saida.enviar_produto(produto)
         except RetentativaExcecao as e:
             raise RetentativaExcecao(f"Erro temporário ao enviar produto: {str(e)}")
         except Exception as e:
