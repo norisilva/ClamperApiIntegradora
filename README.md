@@ -31,13 +31,44 @@ python main.py
 ## Como acessar a API
 Após iniciar a aplicação, a API estará disponível.
 
+## URL Base
+
+http://127.0.0.1:5000
+
+
 ## Endpoints disponíveis
 
-POST http://127.0.0.1:5000/ClamperApiIntegradora/protheus/novoproduto
+POST /ClamperApiIntegradora/protheus/novoproduto
 
-GET http://127.0.0.1:5000/ClamperApiIntegradora/
+**Exemplo de payload válido:**
+```json
+{
+  "codigo_produto": "12345",
+  "descricao_produto": "Produto de teste",
+  "nome_produto": "Produto X",
+  "fabricante_produto": "Fabricante Y",
+  "ano_fabricacao": 2023,
+  "id_transacao": "abc123",
+  "timestamp": "2023-10-05T12:34:56.789Z"
+}
+```
+**Exemplo de payload inválido:**
+```json
+{
+  "codigo_produto": "12345",
+  "descricao_produto": "Produto de teste",
+  "nome_produto": "Produto X",
+  "fabricante_produto": "Fabricante Y",
+  "ano_fabricacao": 1023,
+  "id_transacao": "abc123",
+  "timestamp": "2023-10-05T12:34:56.789Z"
+}
+```
 
-GET http://127.0.0.1:5000/ClamperApiIntegradora/health
+POST /salesforce/novovenda
+
+GET /ClamperApiIntegradora/
+GET /ClamperApiIntegradora/health
 
 ## Informaações do projeto
 
