@@ -1,7 +1,7 @@
 # API de Integração
 Esta é uma API desenvolvida para integrar com o Protheus com o Sales Force, permitindo sincronização de produtos e vendas. 
 
-NOTICE: Trata-se de um projeto academico livre, pode ser usado como base para outros projetos, contém inclusive aspectos de recuperação de falhas produtivas, como retry's com backoff exponencial nas api's que ele aciona, porém não é um projeto de produção, não deve ser usado em produção, pois não possui testes unitários, nem de integração, e não é projeto desenhado para entrar em produção. Caso utilize faça ajustes.
+**NOTICE:** Trata-se de um projeto acadêmico de livre utilização, que pode servir como base para outros projetos. Ele contempla aspectos relevantes, como recuperação de falhas produtivas, incluindo mecanismos de retry com backoff exponencial nas APIs que aciona. Entretanto, este projeto não foi projetado para uso em ambiente de produção: não possui testes unitários, nem de integração, e não segue diretrizes específicas de produção. Caso decida utilizá-lo em outros contextos, recomenda-se realizar os ajustes e adequações necessários.
 
 ## Fluxo
 ![Fluxo da Integração](/doc/fluxo.drawio.png)
