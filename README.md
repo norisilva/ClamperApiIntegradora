@@ -1,3 +1,12 @@
+# API de Integração
+Esta é uma API desenvolvida para integrar com o Protheus com o Sales Force, permitindo sincronização de produtos e vendas. 
+
+NOTICE: Trata-se de um projeto academico livre, pode ser usado como base para outros projetos, contém inclusive aspectos de recuperação de falhas produtivas, como retry's com backoff exponencial nas api's que ele aciona, porém não é um projeto de produção, não deve ser usado em produção, pois não possui testes unitários, nem de integração, e não é projeto desenhado para entrar em produção. Caso utilize faça ajustes.
+
+## Fluxo
+![Fluxo da Integração](/doc/fluxo.drawio.png)
+
+
 ## Como rodar a API localmente
 
 1. Certifique-se de ter o Python 3.8+ instalado em sua máquina.
@@ -29,3 +38,8 @@ POST http://127.0.0.1:5000/ClamperApiIntegradora/protheus/novoproduto
 GET http://127.0.0.1:5000/ClamperApiIntegradora/
 
 GET http://127.0.0.1:5000/ClamperApiIntegradora/health
+
+## Informaações do projeto
+
+RoadMap -> https://github.com/users/norisilva/projects/6/views/4
+Quadro Kanban ->https://github.com/users/norisilva/projects/6/views/1
