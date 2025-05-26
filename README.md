@@ -70,7 +70,8 @@ POST /salesforce/novovenda
 GET /ClamperApiIntegradora/
 GET /ClamperApiIntegradora/health
 
-## Informaações do projeto
+## Informações do projeto
 
 RoadMap -> https://github.com/users/norisilva/projects/6/views/4
+
 Quadro Kanban ->https://github.com/users/norisilva/projects/6/views/1
